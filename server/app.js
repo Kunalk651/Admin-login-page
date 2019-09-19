@@ -7,6 +7,7 @@ app.use(express.json({ extended: false }));
 
 // Routs
 app.use("/", require("./routes/auth"));
+app.use("/", require("./routes/user"));
 
 const PORT = process.env.PORT || 5555;
 connectDB().then(() => {
